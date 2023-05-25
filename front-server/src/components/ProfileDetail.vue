@@ -1,14 +1,14 @@
 <template>
     <div>
-        <h4>ProfileDetail</h4>
+        <img src="../assets/profile.png" style="width: 90%; margin-bottom: 10px;">
         <!-- <img :src="user.imgPath" style="width: 100px;" alt=""> -->
-        <h6>{{username}}</h6>
+        <h4>{{username}}</h4>
         <hr>
         <!-- <p>reviews: {{user.reviewCounts}}</p> -->
         <p>followers: {{followers_count}}</p>
         <p>followings: {{followings_count}}</p>
         <form v-if="me!==username" @submit.prevent="follow">
-            <input v-if="isfollowed" type="submit" value="언팔로우">
+            <input class="btn " v-if="isfollowed" type="submit" value="언팔로우">
             <input v-if="!isfollowed" type="submit" value="팔로우">
         </form>
     </div>

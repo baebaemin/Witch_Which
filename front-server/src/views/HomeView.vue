@@ -5,7 +5,8 @@
     <!-- welcome text :: margin-top이 아니라 가운데 정렬으로 style="margin-top: 300px" --> 
     <div v-if="sectionOne" @click="showOffCanvas">
       <div class="textContainer ex" id="sectOne">
-        <span>W</span><span>i</span><span>t</span><span>c</span><span>h</span> <span>W</span> <span>h</span><span>i</span><span>c</span><span>h</span><span>M</span><span>o</span> <span>s</span><span>t</span><span>u</span><span>d</span><span>i</span><span>o</span> <span>f</span><span>r</span><span>o</span><span>m</span> <span>C</span><span>o</span><span>l</span><span>u</span><span>m</span><span>b</span><span>u</span><span>s</span><span>,</span> <span>O</span><span>h</span><span>i</span><span>o</span><span>.</span>
+            <span>W</span><span>i</span><span>t</span><span>c</span><span>h</span> <span>W</span><span>h</span><span>i</span><span>c</span><span>h</span><br>
+    <hr> <span>a</span> <span>w</span><span>i</span><span>z</span><span>a</span><span>r</span><span>d</span> <span>f</span><span>o</span><span>r</span> <span>y</span><span>o</span><span>u</span><span>r</span> <span>m</span><span>o</span><span>v</span><span>i</span><span>e</span> <span>s</span><span>e</span><span>l</span><span>e</span><span>c</span><span>t</span><span>i</span><span>o</span><span>n</span>
         <!-- <img :src="require('@/assets/crystal-ball.png')" style="width: 200px;" alt="" /> -->
       </div>
     </div>
@@ -104,7 +105,7 @@
           <div class="circle" v-if="!isLogin" data-bs-toggle="modal" data-bs-target="#Login">로그인</div>
           <div class="circle" v-if="!isLogin" @click="go">처음으로</div>
           <router-link v-if="isLogin" :to="{ name: 'ContentView', params:{userName: me} }"><div class="circle">나의 무비덱</div></router-link>
-          <div class="circle" v-if="isLogin" @click="go">카드 수집하러 가기</div>
+          <div class="circle" v-if="isLogin" @click="go" :to="{ name: 'HomeView'}">카드 수집하러 가기</div>
           <div class="circle" v-if="isLogin" @click="logout">로그아웃</div>
         </div>
         

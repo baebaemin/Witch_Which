@@ -11,7 +11,7 @@
     style="background-color: rgb(245, 245, 245, 0); padding: 25px;"
   >
   
-    <h1 class="cardTitle" style="top: 3%;">Q{{nthCard}}.</h1>
+    <h1 class="cardTitle" style="top: 3%;">Q.</h1>
     <h4 class="cardTitle" style="line-height: 160%;"> {{ card }}</h4>
     <div class="left-indicator" style="font-size: 27px; color: white; font-style: italic; padding: 10%;" v-show="showLeftIndicator">{{ getLeftAnswer }}</div>
     <div class="right-indicator" style="font-size: 27px; color: white; font-style: italic; padding: 10%;" v-show="showRightIndicator">{{ getRightAnswer }}</div>
@@ -55,7 +55,7 @@ export default {
     isCurrent: {
       type: Boolean,
       required: true
-    }
+    },
   },
   data() {
     return {
@@ -69,7 +69,6 @@ export default {
       },
       showLeftIndicator: false, // +
       showRightIndicator: false,
-      nthCard: 1,
     };
   },
   computed: {
@@ -94,7 +93,6 @@ export default {
   
   mounted() {
     const element = this.$refs.interactElement;
-
     interact(element).draggable({
       onstart: () => {
         this.isInteractAnimating = false;

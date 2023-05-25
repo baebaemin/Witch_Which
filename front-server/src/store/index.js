@@ -33,10 +33,10 @@ export default new Vuex.Store({
     follow: [], // follow 관련 데이터
     genre_recommend_list: [], // 장르 기반 추천 데이터 들어감
     All_users: [], // 모든 유저 데이터 들어감
-    user_recommended : [1], // 모르겠음,
+    user_special_movies: [], // 유저가 선택한 스페셜 영화
     user_deque_movies: [], // 유저 댁 들어가는 배열
     user_like_movies: [], // 유저가 좋아요 한 무비
-    user_special_movies: [] // 유저가 선택한 스페셜 영화
+    user_recommended : [], // 모르겠음,
   },
   getters: {
     isLogin(state) {
@@ -56,6 +56,7 @@ export default new Vuex.Store({
     addToRecommendedMovieList(state, movie) { 
       const selectedCard = {
         dataImage: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
+        backImage: `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`,
         movieTitle: movie.original_title,
         movieContents: `${movie.title} (${movie.release_date.slice(0, 4)})`,
         isRevealed: false

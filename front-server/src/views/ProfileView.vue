@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>ProfileView</h1>
-    <hr>
+    <h1>{{username}}님의 Movie Deque 🃏</h1>
+    <hr style="opacity: 1;">
     <div class="row">
       <ProfileDetail class="col-2 text-center"
       :username="username"/> 

@@ -5,6 +5,7 @@
         v-for="(card, index) in cards"
         :key="card"
         :card="card"
+        :nthCard="index"
         :is-current="index === 0"
         @cardAccepted="$emit('cardAccepted');"
         @cardRejected="$emit('cardRejected');"
@@ -39,6 +40,5 @@ export default {
   margin: 50px;
   width: 400px;
   // height: 300px;
-  
 }
 </style>
