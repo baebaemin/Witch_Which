@@ -1,0 +1,875 @@
+
+
+[
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 1,
+   "question": "가족이랑 여행을 떠났는데 나를 하루종일 캠코더로 찍어주겠대 🎥",
+   "leftAnswer": "추억도 남기고 좋다!!",
+   "rightAnstwer": "으음 부담스러운데..",
+   "leftMovieId": 965150,
+   "leftMovieName": "애프터썬(After Sun)"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 2,
+   "question": "“가장 용맹한 자, 나의 목을 내리치면 명예와 재물을 주겠다...”",
+   "leftAnswer": "(뎅겅)",
+   "rightAnstwer": "ㅜㅜ 살인은 안돼욧",
+   "leftMovieId": 559907,
+   "leftMovieName": "그린 나이트(Green Knight)"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 3,
+   "question": "🚨 애애애앵~~~ 🚨 [동네 전체에 갑자기 경보음이 울린다]",
+   "leftAnswer": "지금 당장 대피소로 피해 !!",
+   "rightAnstwer": "무슨 일이 일어난건데?",
+   "leftMovieId": 64720,
+   "rightMovieId": 744594,
+   "leftMovieName": "테이크 쉘터(Take Shelter)",
+   "rightMovieName": "화이트 노이즈(White Noise)"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 4,
+   "question": "남자와 여자는 친구가 ...",
+   "leftAnswer": "될 수 있다!",
+   "rightAnstwer": "될 수 없다!",
+   "leftMovieId": 639,
+   "rightMovieId": 639,
+   "leftMovieName": "해리가 샐리를 만났을때(When Harry Met Sally)",
+   "rightMovieName": "해리가 샐리를 만났을때(When Harry Met Sally)"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 5,
+   "question": "AI랑 사랑에 빠질 수도 있다고 생각해?",
+   "leftAnswer": "why not?",
+   "rightAnstwer": "그건 좀 이상한데...",
+   "leftMovieId": 152601,
+   "leftMovieName": "그녀(Her)"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 6,
+   "question": "\" 당장 짐부터 싸, 우리 같이 여행 가자! \" - 어제 만난 이상형 -",
+   "leftAnswer": "너무 설렌다",
+   "rightAnstwer": "앗.. 그건 좀;",
+   "rightMovieId": 258480,
+   "rightMovieName": "캐롤(Carol)"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 7,
+   "question": "왼손은",
+   "leftAnswer": "거들 뿐",
+   "rightAnstwer": "오른손이 아닙니다",
+   "leftMovieId": 783675,
+   "leftMovieName": "더 퍼스트 슬램덩크(The First Slam Dunk)"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 8,
+   "question": "반복되는 일상은 ...",
+   "leftAnswer": "끔찍하고 지루해. 탈출하고 싶어.",
+   "rightAnstwer": "안정적이고 편안해",
+   "leftMovieId": 137,
+   "rightMovieId": 370755,
+   "leftMovieName": "사랑의 블랙홀(Groundhog Day)",
+   "rightMovieName": "패터슨(Paterson)"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 9,
+   "question": "마음을 다스리는 요법이 필요하신가요?",
+   "leftAnswer": "네",
+   "rightAnstwer": "딱히요",
+   "leftMovieId": 799375,
+   "leftMovieName": "스터츠: 마음을 다스리는 마스터(Stuts)"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 10,
+   "question": "우리가게 손님이 수상하다..",
+   "leftAnswer": "매출 올려주면 장땡",
+   "rightAnstwer": "신고하자!!",
+   "leftMovieId": 567646,
+   "leftMovieName": "극한직업"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 11,
+   "question": "평화로운 시골생활 어때?",
+   "leftAnswer": "내 꿈이 귀농이야!",
+   "rightAnstwer": "난 없는게 없는 도시가 좋아!",
+   "leftMovieId": 448491,
+   "leftMovieName": "리틀 포레스트"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 11,
+   "question": "평화로운 시골 생활 어때?",
+   "leftAnswer": "내 꿈이 귀농이야!",
+   "rightAnstwer": "난 없는게 없는 도시가 좋아!",
+   "leftMovieId": 294682,
+   "leftMovieName": "리틀 포레스트: 여름과 가을"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 11,
+   "question": "평화로운 시골생활, 어때?",
+   "leftAnswer": "내 꿈이 귀농이야!",
+   "rightAnstwer": "난 없는게 없는 도시가 좋아!",
+   "leftMovieId": 336026,
+   "leftMovieName": "리틀 포레스트 2: 겨울과 봄"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 12,
+   "question": "ㄴr는 슬플 ㄸH ...☆",
+   "leftAnswer": "힙합을 들어 🎤",
+   "rightAnstwer": "힙합을 춰",
+   "leftMovieId": 65,
+   "rightMovieId": 989889,
+   "leftMovieName": "8 마일",
+   "rightMovieName": "킵 스텝핑"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 12,
+   "question": "ㄴr는 슬플 ㄸH ..☆",
+   "leftAnswer": "힙합을 들어 🎤",
+   "rightAnstwer": "힙합을 춰",
+   "leftMovieId": 10060,
+   "rightMovieId": 9762,
+   "leftMovieName": "겟 리치 오어 다이 트라인",
+   "rightMovieName": "스텝 업"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 12,
+   "question": "ㄴr는 슬플 ㄸ H ...☆",
+   "leftAnswer": "힙합을 들어 🎤",
+   "rightAnstwer": "힙합을 춰",
+   "leftMovieId": 14410,
+   "rightMovieId": 8328,
+   "leftMovieName": "노토리어스",
+   "rightMovieName": "스텝 업2: 더 스트리트"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 13,
+   "question": "나만의 영화를 만들어보고 싶다고 생각한 적 있나요?",
+   "leftAnswer": "마음만은 벌써 오스카 수상 🏆",
+   "rightAnstwer": "보는걸로 만족해요",
+   "leftMovieId": 747983,
+   "leftMovieName": "썸머 필름을 타고!!"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 13,
+   "question": "나만의 영화를 만들어보고 싶다고 생각한 적 있으신가요?",
+   "leftAnswer": "마음만은 벌써 오스카 수상 🏆",
+   "rightAnstwer": "보는걸로 만족해요",
+   "leftMovieId": 676349,
+   "leftMovieName": "원스 어폰 어 타임 인 우간다"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 13,
+   "question": "나만의 영화를 만들어보고 싶다고 생각한 적이 있으신가요?",
+   "leftAnswer": "마음만은 벌써 오스카 수상 🏆",
+   "rightAnstwer": "보는걸로 만족해요",
+   "leftMovieId": 308369,
+   "leftMovieName": "나와 친구, 그리고 죽어가는 소녀"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 14,
+   "question": "아무래도..",
+   "leftAnswer": "사랑보단 성공이지",
+   "rightAnstwer": "성공보단 사랑이지",
+   "leftMovieId": 313369,
+   "leftMovieName": "라라랜드"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 14,
+   "question": "아무래도...",
+   "leftAnswer": "사랑보단 성공이지",
+   "rightAnstwer": "성공보단 사랑이지",
+   "leftMovieId": 244786,
+   "leftMovieName": "위플래쉬"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 14,
+   "question": "아무래도....",
+   "leftAnswer": "사랑보단 성공이지",
+   "rightAnstwer": "성공보단 사랑이지",
+   "leftMovieId": 19913,
+   "leftMovieName": "500일의 썸머"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 14,
+   "question": "아무래도.....",
+   "leftAnswer": "사랑보단 성공이지",
+   "rightAnstwer": "성공보단 사랑이지",
+   "leftMovieId": 492188,
+   "leftMovieName": "결혼 이야기"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 14,
+   "question": "아무래도......",
+   "leftAnswer": "사랑보단 성공이지",
+   "rightAnstwer": "성공보단 사랑이지",
+   "leftMovieId": 660120,
+   "leftMovieName": "사랑할 땐 누구나 최악이 된다"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 15,
+   "question": "내 삶이 영화라면, 나는 요즘",
+   "leftAnswer": "조연으로 밀려난 것 같은 기분이야",
+   "rightAnstwer": "주인공으로 살아가고 있어!",
+   "leftMovieId": 312669,
+   "rightMovieId": 335797,
+   "leftMovieName": "매기스 플랜",
+   "rightMovieName": "씽"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 15,
+   "question": "내 삶이 영화라면, 나는 요즘..",
+   "leftAnswer": "조연으로 밀려난 것 같은 기분이야",
+   "rightAnstwer": "주인공으로 살아가고 있어!",
+   "leftMovieId": 312669,
+   "rightMovieId": 438695,
+   "leftMovieName": "매기스 플랜",
+   "rightMovieName": "씽2게더"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 16,
+   "question": "나의 모든걸 내던지는 영화 같은 사랑...",
+   "leftAnswer": "한 번쯤은 해보고 싶다",
+   "rightAnstwer": "사는 것도 힘들구먼유",
+   "leftMovieId": 705996,
+   "rightMovieId": 60420,
+   "leftMovieName": "헤어질 결심",
+   "rightMovieName": "라이크 크레이지"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 16,
+   "question": "나의 모든걸 내던지는 영화 같은 사랑",
+   "leftAnswer": "한 번쯤은 해보고 싶다",
+   "rightAnstwer": "사는 것도 힘들구먼유",
+   "leftMovieId": 18329,
+   "rightMovieId": 60420,
+   "leftMovieName": "해피 투게더",
+   "rightMovieName": "라이크 크레이지"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 16,
+   "question": "나의 모든걸 내던지는 영화 같은 사랑..",
+   "leftAnswer": "한 번쯤은 해보고 싶다",
+   "rightAnstwer": "사는 것도 힘들구먼유",
+   "leftMovieId": 8051,
+   "rightMovieId": 60420,
+   "leftMovieName": "펀치 드렁크 러브",
+   "rightMovieName": "라이크 크레이지"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 17,
+   "question": "함께 살던 안드로이드 로봇이 어느 날 작동을 멈추자...",
+   "leftAnswer": "어떤 수를 써서라도 고쳐야 해, 가족이잖아",
+   "rightAnstwer": "같은 모델으로 새로 사자, 로봇이잖아",
+   "leftMovieId": 585378,
+   "leftMovieName": "애프터양"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 17,
+   "question": "함께 살던 안드로이드 로봇이 어느 날 작동을 멈추자..",
+   "leftAnswer": "어떤 수를 써서라도 고쳐야 해, 가족이잖아",
+   "rightAnstwer": "같은 모델으로 새로 사자, 로봇이잖아",
+   "leftMovieId": 644,
+   "leftMovieName": "AI"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 18,
+   "question": "내가 이 세상에서 사라진다면,",
+   "leftAnswer": "어떤 흔적도 남기고 싶지 않아",
+   "rightAnstwer": "꼭 나를 기억해줬으면 해",
+   "rightMovieId": 653574,
+   "rightMovieName": "딕 존슨이 죽었습니다"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 19,
+   "question": "세계가 곧 멸망한다면,",
+   "leftAnswer": "사랑하는 사람들과 함께 시간을 보내자",
+   "rightAnstwer": "포기하지 마! 어떻게든 살아남을 방도를 찾자",
+   "leftMovieId": 88005,
+   "rightMovieId": 6479,
+   "leftMovieName": "세상의 끝까지 21일",
+   "rightMovieName": "나는 전설이다"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 19,
+   "question": "세계가 곧 멸망한다면..",
+   "leftAnswer": "사랑하는 사람들과 함께 시간을 보내자",
+   "rightAnstwer": "포기하지 마! 어떻게든 살아남을 방도를 찾자",
+   "leftMovieId": 646380,
+   "rightMovieId": 6479,
+   "leftMovieName": "돈 룩 업",
+   "rightMovieName": "나는 전설이다"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 20,
+   "question": "캠핑카를 타고 여기저기 돌아다니며 살아간다면",
+   "leftAnswer": "여행도 하고 너무 좋겠다아",
+   "rightAnstwer": "집 떠나면 개고생 !",
+   "leftMovieId": 581734,
+   "leftMovieName": "노매드랜드"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 21,
+   "question": "가족들은 나를 ...",
+   "leftAnswer": "이해하지 못하는 것 같아",
+   "rightAnstwer": "언제나 응원해주는 든든한 지원군이야",
+   "leftMovieId": 547404,
+   "rightMovieId": 331482,
+   "leftMovieName": "벌새",
+   "rightMovieName": "작은 아씨들"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 21,
+   "question": "가족들은 나를...",
+   "leftAnswer": "이해하지 못하는 것 같아",
+   "rightAnstwer": "언제나 응원해주는 든든한 지원군이야",
+   "leftMovieId": 547404,
+   "rightMovieId": 116149,
+   "leftMovieName": "벌새",
+   "rightMovieName": "패딩턴"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 21,
+   "question": "가족들은 나를",
+   "leftAnswer": "이해하지 못하는 것 같아",
+   "rightAnstwer": "언제나 응원해주는 든든한 지원군이야",
+   "leftMovieId": 547404,
+   "rightMovieId": 346648,
+   "leftMovieName": "벌새",
+   "rightMovieName": "패딩턴2"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 22,
+   "question": "친구가 별똥별에 소원을 빌러 2박 3일 여행을 가자는데...",
+   "leftAnswer": "음.. 고작 소원 때문에?",
+   "rightAnstwer": "좋아좋아! 담요랑 핫초코 챙겨!!",
+   "rightMovieId": 79382,
+   "rightMovieName": "진짜로 일어날지도 몰라, 기적"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 23,
+   "question": "제일 친한 친구가 이민을 결심했다고 한다!",
+   "leftAnswer": "날 버리고 어딜 가... 떠나지 마 ㅜㅜ",
+   "rightAnstwer": "너무 멋지다!! 너의 도전을 응원해!!",
+   "rightMovieId": 508943,
+   "rightMovieName": "루카"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 23,
+   "question": "제일 친한 친구가 이민을 결심했다고 한다",
+   "leftAnswer": "날 버리고 어딜 가... 떠나지 마 ㅜㅜ",
+   "rightAnstwer": "너무 멋지다!! 너의 도전을 응원해!!",
+   "rightMovieId": 301528,
+   "rightMovieName": "토이 스토리4"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 24,
+   "question": "유령이 노크를 한다 \"똑똑똑...\"",
+   "leftAnswer": "에공... 도대체 무슨 사연이...'",
+   "rightAnstwer": "들어오지 마세요 ㅠㅠ 무서워요 ㅠㅠ",
+   "leftMovieId": 428449,
+   "leftMovieName": "고스트 스토리"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 24,
+   "question": "유령이 노크를 하고 있다. \"똑똑똑...\"",
+   "leftAnswer": "에공... 도대체 무슨 사연이...'",
+   "rightAnstwer": "들어오지 마세요 ㅠㅠ 무서워요 ㅠㅠ",
+   "leftMovieId": 620,
+   "leftMovieName": "고스트 버스터즈"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 25,
+   "question": "페스티벌에 간다면?",
+   "leftAnswer": "와인과 함께 재즈 페스티벌",
+   "rightAnstwer": "타락도 락이다!!! 락 페스티벌",
+   "leftMovieId": 776527,
+   "rightMovieId": 26320,
+   "leftMovieName": "소울, 영혼, 그리고 여름",
+   "rightMovieName": "테이킹 우드스탁"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 25,
+   "question": "더운 여름, 페스티벌에 간다면?",
+   "leftAnswer": "와인과 함께 재즈 페스티벌",
+   "rightAnstwer": "타락도 락이다!!! 락 페스티벌",
+   "leftMovieId": 508442,
+   "rightMovieId": 26320,
+   "leftMovieName": "소울",
+   "rightMovieName": "테이킹 우드스탁"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 25,
+   "question": "어떤 페스티벌에 갈까?",
+   "leftAnswer": "와인과 함께 재즈 페스티벌",
+   "rightAnstwer": "타락도 락이다!!! 락 페스티벌",
+   "leftMovieId": 548947,
+   "rightMovieId": 1584,
+   "leftMovieName": "쳇 베이커의 마지막 순간들",
+   "rightMovieName": "스쿨오브락"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 25,
+   "question": "페스티벌에 간다면??",
+   "leftAnswer": "와인과 함께 재즈 페스티벌",
+   "rightAnstwer": "타락도 락이다!!! 락 페스티벌",
+   "leftMovieId": 327528,
+   "rightMovieId": 1584,
+   "leftMovieName": "본 투 비 블루",
+   "rightMovieName": "스쿨오브락"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 26,
+     "question": "여행 중, 기차 안에서 책을 읽는데 낯선 사람이 무슨 책을 읽냐고 말을 걸어온다.",
+     "leftAnswer": "드르렁...' 황급히 조는 척 하자",
+     "rightAnstwer": "책을 좋아하나?? 읽고 있던 책 제목과 내용을 간략히 말해준다.",
+     "rightMovieId": 76,
+     "rightMovieName": "비포 선라이즈"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 27,
+   "question": "여름이 좋아, 겨울이 좋아?",
+   "leftAnswer": "여름",
+   "rightAnstwer": "겨울",
+   "leftMovieId": 297743,
+   "rightMovieId": 38,
+   "leftMovieName": "한 여름의 판타지아",
+   "rightMovieName": "이터널 선샤인"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 27,
+   "question": "여름 VS 겨울",
+   "leftAnswer": "여름",
+   "rightAnstwer": "겨울",
+   "leftMovieId": 398818,
+   "rightMovieId": 38,
+   "leftMovieName": "콜 미 바이 유어 네임",
+   "rightMovieName": "이터널 선샤인"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 27,
+   "question": "여름과 겨울 중 어떤 계절이 좋아?",
+   "leftAnswer": "여름",
+   "rightAnstwer": "겨울",
+   "leftMovieId": 37563,
+   "rightMovieId": 38,
+   "leftMovieName": "여름 이야기",
+   "rightMovieName": "이터널 선샤인"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 28,
+   "question": "귀여운 나무랑 모험을 떠나볼래??",
+   "leftAnswer": "어! 너무 좋아!!",
+   "rightAnstwer": "그게 무슨말이야... 나무가.. 귀여워..?",
+   "leftMovieId": 118340,
+   "leftMovieName": "가디언즈 오브 갤럭시"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 28,
+   "question": "귀여운 나무랑 모험을 떠나볼래?",
+   "leftAnswer": "어! 너무 좋아!!",
+   "rightAnstwer": "그게 무슨말이야... 나무가.. 귀여워..?",
+   "leftMovieId": 447365,
+   "leftMovieName": "가디언즈 오브 갤럭시: Volume 3"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 29,
+   "question": "뱀파이어가 실제로 존재한다면 어떨 것 같아?",
+   "leftAnswer": "만나보고 싶어!",
+   "rightAnstwer": "내 피를 빨아먹으면 어떡해 ... 만나고 싶지 않아",
+   "leftMovieId": 8966,
+   "leftMovieName": "트와일라잇"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 29,
+   "question": "친한 친구가 알고보니 뱀파이어였다면?",
+   "leftAnswer": "멋지다!",
+   "rightAnstwer": "내 피를 빨아먹으면 어떡해 ... 만나고 싶지 않아",
+   "leftMovieId": 18239,
+   "leftMovieName": "뉴 문"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 29,
+   "question": "학교 친구가 알고보니 뱀파이어였다면?",
+   "leftAnswer": "만나보고 싶어!",
+   "rightAnstwer": "내 피를 빨아먹으면 어떡해 ... 만나고 싶지 않아",
+   "leftMovieId": 41402,
+   "leftMovieName": "렛 미 인"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 30,
+   "question": "우주에 다른 생명체들이 사는 행성이 있다고 생각해?",
+   "leftAnswer": "응, 분명 있지 않을까?",
+   "rightAnstwer": "글쎄..?",
+   "leftMovieId": 19995,
+   "leftMovieName": "아바타"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 30,
+   "question": "우주에 다른 생명체들이 있다고 생각해?",
+   "leftAnswer": "응, 분명 있지 않을까?",
+   "rightAnstwer": "글쎄..?",
+   "leftMovieId": 76600,
+   "leftMovieName": "아바타: 물의 길"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 31,
+   "question": "목숨이 위험해도 나만이 해결할 수 있는 위험한 임무가 주어진다면",
+   "leftAnswer": "어쩔 수 없지, 맡겨만 주세요!",
+   "rightAnstwer": "네...? (뒷걸음질)",
+   "leftMovieId": 744,
+   "leftMovieName": "탑건"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 31,
+   "question": "목숨을 걸어야 하지만 나만이 해결할 수 있는 위험한 임무가 주어진다면",
+   "leftAnswer": "어쩔 수 없지, 맡겨만 주세요!",
+   "rightAnstwer": "네...? (뒷걸음질)",
+   "leftMovieId": 361743,
+   "leftMovieName": "탑건: 매버릭"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 31,
+   "question": "목숨이 위험해도 나만이 해결할 수 있는 위험한 임무가 주어진다면",
+   "leftAnswer": "어쩔 수 없지, 맡겨만 주세요!",
+   "rightAnstwer": "네...? (뒷걸음질)",
+   "leftMovieId": 157336,
+   "leftMovieName": "인터스텔라"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 32,
+   "question": "내 몸속에 짱 쎈 생명체가 들어왔다...??",
+   "leftAnswer": "기왕 이렇게 된거 좋은일을 해보자!!",
+   "rightAnstwer": "이건 내 몸이야!!! 당장 꺼져!",
+   "leftMovieId": 335983,
+   "leftMovieName": "베놈"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 32,
+   "question": "내 몸 속에 짱 쎈 생명체가 들어왔다...??",
+   "leftAnswer": "기왕 이렇게 된거 좋은일을 해보자!!",
+   "rightAnstwer": "이건 내 몸이야!!! 당장 꺼져!",
+   "leftMovieId": 580489,
+   "leftMovieName": "베놈 2: 렛 데어 비 카니지"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 33,
+   "question": "귀신과 요괴들을 모시고 일을 해야 한다면,",
+   "leftAnswer": "음... 페이는 얼마에요?",
+   "rightAnstwer": "내가 오ㅒ????",
+   "leftMovieId": 129,
+   "leftMovieName": "센과 치히로의 행방불명"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 34,
+   "question": "자고 일어났더니 폭삭 늙어버렸어..",
+   "leftAnswer": "일단 열심히 살아는 봐야지!",
+   "rightAnstwer": "내 얼굴 돌려줘..",
+   "leftMovieId": 4935,
+   "leftMovieName": "하울의 움직이는 성"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 35,
+   "question": "죽었더니... 여긴.... 지옥..?",
+   "leftAnswer": "내가 뭘 잘못했을지도..?",
+   "rightAnstwer": "내가 뭘 잘못했다고 !!!!!!!!!!!",
+   "leftMovieId": 397567,
+   "leftMovieName": "신과함께-죄와 벌"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 35,
+   "question": "죽었더니 ... 여긴.... 지옥..?",
+   "leftAnswer": "내가 뭘 잘못했을지도..?",
+   "rightAnstwer": "내가 뭘 잘못했다고 !!!!!!!!!!!",
+   "leftMovieId": 518068,
+   "leftMovieName": "신과함께-인과 연"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 36,
+   "question": "살인마가 몇 번을 실패해도 날 죽이려고 쫓아와..",
+   "leftAnswer": "이쯤되면 나도 맞서야될지도..?",
+   "rightAnstwer": "계속 도망쳐ㅠㅠㅠㅠ",
+   "leftMovieId": 671,
+   "leftMovieName": "해리 포터와 마법사의 돌"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 36,
+   "question": "살인마가 몇 번을 실패해도 날 죽이려고 계속 쫓아와..",
+   "leftAnswer": "이쯤되면 나도 맞서야될지도..?",
+   "rightAnstwer": "계속 도망쳐ㅠㅠㅠㅠ",
+   "leftMovieId": 672,
+   "leftMovieName": "해리 포터와 비밀의 방"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 37,
+   "question": "로봇과 친구가 될 수 있다고 생각해?",
+   "leftAnswer": "될수 있지!",
+   "rightAnstwer": "로봇 따위가?",
+   "leftMovieId": 177572,
+   "leftMovieName": "빅 히어로"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 38,
+   "question": "상상속의 동물이 내 반려동물이 된다면?",
+   "leftAnswer": "너무 좋아!",
+   "rightAnstwer": "그런건 실존할 수 없어.",
+   "leftMovieId": 10191,
+   "leftMovieName": "드래곤 길들이기"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 39,
+   "question": "내가 세상을 구해야 한다면..?",
+   "leftAnswer": "소중한 사람들을 위해 지켜내야지!!",
+   "rightAnstwer": "난 자신이 없어..",
+   "leftMovieId": 24428,
+   "leftMovieName": "어벤져스"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 39,
+   "question": "내가 세상을 구해야 한다면...?",
+   "leftAnswer": "소중한 사람들을 위해 지켜내야지!!",
+   "rightAnstwer": "난 자신이 없어..",
+   "leftMovieId": 299534,
+   "leftMovieName": "어벤져스: 엔드게임"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 40,
+   "question": "전학간 학교에서 양아치한테 찍혔다..",
+   "leftAnswer": "참지 않긔",
+   "rightAnstwer": "다시 전학가야겠다..",
+   "leftMovieId": 10625,
+   "leftMovieName": "퀸카로 살아남는 법"
+   }
+ },
+  {
+   "model": "movies.QuestionOTO",
+   "fields": {
+   "type": 41,
+   "question": "회사에서 큰 실수를 저질렀다. 나의 선택은?",
+   "leftAnswer": "짤리기 싫어ㅠㅠ 어떻게든 방법을 찾아낸다..",
+   "rightAnstwer": "사표 낸다..",
+   "leftMovieId": 9487,
+   "leftMovieName": "벅스 라이프"
+  }
+ }
+ ]

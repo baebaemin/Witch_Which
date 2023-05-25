@@ -1,0 +1,298 @@
+[
+  {
+    "model": "movies.movie_genres",
+    "pk": 1,
+    "fields": {
+      "movie": 965150,
+      "genre": 18
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 2,
+    "fields": {
+      "movie": 783675,
+      "genre": 16
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 3,
+    "fields": {
+      "movie": 783675,
+      "genre": 35
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 4,
+    "fields": {
+      "movie": "783675",
+      "genre": "18"
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 5,
+    "fields": {
+      "movie": 137,
+      "genre": 10749
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 6,
+    "fields": {
+      "movie": 137,
+      "genre": 14
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 7,
+    "fields": {
+      "movie": 137,
+      "genre": 18
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 8,
+    "fields": {
+      "movie": 137,
+      "genre": 35
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 9,
+    "fields": {
+      "movie": 799375,
+      "genre": 99
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 10,
+    "fields": {
+      "movie": 545611,
+      "genre": 28
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 11,
+    "fields": {
+      "movie": 545611,
+      "genre": 12
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 12,
+    "fields": {
+      "movie": 545611,
+      "genre": 878
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 13,
+    "fields": {
+      "movie": 65,
+      "genre": 18
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 14,
+    "fields": {
+      "movie": 65,
+      "genre": 10402
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 15,
+    "fields": {
+      "movie": 10060,
+      "genre": 18
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 16,
+    "fields": {
+      "movie": 10060,
+      "genre": 80
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 17,
+    "fields": {
+      "movie": 10060,
+      "genre": 10402
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 18,
+    "fields": {
+      "movie": 14410,
+      "genre": 10402
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 19,
+    "fields": {
+      "movie": 14410,
+      "genre": 18
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 20,
+    "fields": {
+      "movie": 14410,
+      "genre": 36
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 21,
+    "fields": {
+      "movie": 747983,
+      "genre": 35
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 22,
+    "fields": {
+      "movie": 747983,
+      "genre": 18
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 23,
+    "fields": {
+      "movie": 747983,
+      "genre": 10749
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 24,
+    "fields": {
+      "movie": 747983,
+      "genre": 878
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 25,
+    "fields": {
+      "movie": 676349,
+      "genre": 99
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 26,
+    "fields": {
+      "movie": 308369,
+      "genre": 18
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 27,
+    "fields": {
+      "movie": 308369,
+      "genre": 35
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 28,
+    "fields": {
+      "movie": 313369,
+      "genre": 35
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 29,
+    "fields": {
+      "movie": 313369,
+      "genre": 18
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 30,
+    "fields": {
+      "movie": 313369,
+      "genre": 10749
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 31,
+    "fields": {
+      "movie": 313369,
+      "genre": 10402
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 32,
+    "fields": {
+      "movie": 244786,
+      "genre": 18
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 33,
+    "fields": {
+      "movie": 244786,
+      "genre": 10402
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 34,
+    "fields": {
+      "movie": 19913,
+      "genre": 35
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 35,
+    "fields": {
+      "movie": 19913,
+      "genre": 18
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 36,
+    "fields": {
+      "movie": 19913,
+      "genre": 10749
+    }
+  },
+  {
+    "model": "movies.movie_genres",
+    "pk": 37,
+    "fields": {
+      "movie": 492188,
+      "genre": 18
+    }
+  }
+]

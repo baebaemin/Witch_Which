@@ -1,0 +1,211 @@
+[
+  {
+    "model": "movies.movie",
+    "pk": 965150,
+    "fields": {
+      "title": "애프터썬",
+      "release_date": "2022-10-21",
+      "popularity": 32.934,
+      "vote_average": 7.7,
+      "poster_path": "/zZh6x7aHtSxsIQCewZVKEykVNtO.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 559907,
+    "fields": {
+      "title": "그린 나이트",
+      "release_date": "2021-07-29",
+      "popularity": 22.009,
+      "vote_average": 6.584,
+      "poster_path": "/7myc6oVR4oXu5Rd5twllyFu85E2.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 64720,
+    "fields": {
+      "title": "테이크 쉘터",
+      "release_date": "2011-09-30",
+      "popularity": 9.713,
+      "vote_average": 7.047,
+      "poster_path": "/zLZQv7cN8ckBEa7HvjYkm2wx7F9.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 639,
+    "fields": {
+      "title": "해리가 샐리를 만났을 때",
+      "release_date": "1989-07-21",
+      "popularity": 19.534,
+      "vote_average": 7.405,
+      "poster_path": "/m4IfPfmR3LELJgu5aa03CIennTF.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 152601,
+    "fields": {
+      "title": "그녀",
+      "release_date": "2013-12-18",
+      "popularity": 34.026,
+      "vote_average": 7.863,
+      "poster_path": "/eTOqjSNjMUpnjbRCnYElU4b5uWW.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 783675,
+    "fields": {
+      "title": "더 퍼스트 슬램덩크",
+      "release_date": "2022-12-03",
+      "popularity": 52.443,
+      "vote_average": 8.053,
+      "poster_path": "/coiJrdXAXuBkSGDvp9bZ7mkuU6E.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 137,
+    "fields": {
+      "title": "사랑의 블랙홀",
+      "release_date": "1993-02-11",
+      "popularity": 22.172,
+      "vote_average": 7.605,
+      "poster_path": "/1sWyuim6Ck0qIUAr2SvuLCGdmkb.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 799375,
+    "fields": {
+      "title": "스터츠: 마음을 다스리는 마스터",
+      "release_date": "2022-11-14",
+      "popularity": 15.651,
+      "vote_average": 7.669,
+      "poster_path": "/uOiJmotRM12wsgfwiEXsp3AErdU.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 545611,
+    "fields": {
+      "title": "에브리씽 에브리웨어 올 앳 원스",
+      "release_date": "2022-03-24",
+      "popularity": 88.629,
+      "vote_average": 7.845,
+      "poster_path": "/aCW0sC55bFnOaUBP2eUGryvAJXf.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 65,
+    "fields": {
+      "title": "8 마일",
+      "release_date": "2002-11-08",
+      "popularity": 26.881,
+      "vote_average": 7.126,
+      "poster_path": "/6Uj1HQViIm5QWnxLzpAQTxEEzeK.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 10060,
+    "fields": {
+      "title": "겟 리치 오어 다이 트라인",
+      "release_date": "2005-11-09",
+      "popularity": 17.418,
+      "vote_average": 6.768,
+      "poster_path": "/1X5oM4ZcUdxpfsURpDOxoF0Ezco.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 14410,
+    "fields": {
+      "title": "노토리어스",
+      "release_date": "2009-01-16",
+      "popularity": 20.448,
+      "vote_average": 6.944,
+      "poster_path": "/62NsZPgueSiE8y7dqtU3FSLFwYw.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 747983,
+    "fields": {
+      "title": "썸머 필름을 타고!",
+      "release_date": "2021-08-06",
+      "popularity": 4.151,
+      "vote_average": 7.25,
+      "poster_path": "/1TDvKMB5LocIlm2dtMcG9FOmikp.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 676349,
+    "fields": {
+      "title": "원스 어폰 어 타임 인 우간다",
+      "release_date": "2021-09-23",
+      "popularity": 1.298,
+      "vote_average": 7,
+      "poster_path": "/eEV1I9WRckYgTGvbgRx8Slw2C12.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 308369,
+    "fields": {
+      "title": "나와 친구, 그리고 죽어가는 소녀",
+      "release_date": "2015-06-12",
+      "popularity": 10.934,
+      "vote_average": 7.6,
+      "poster_path": "/jxE1ZJCDwulv1BMzE9VfpoBB3Cf.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 313369,
+    "fields": {
+      "title": "라라랜드",
+      "release_date": "2016-11-29",
+      "popularity": 30.253,
+      "vote_average": 7.891,
+      "poster_path": "/6v4g6yW01uTmbxqwg75iEkMkrNP.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 244786,
+    "fields": {
+      "title": "위플래쉬",
+      "release_date": "2014-10-10",
+      "popularity": 55.554,
+      "vote_average": 8.377,
+      "poster_path": "/fz6osxiG7BWqnLoNgAlekpgSthf.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 19913,
+    "fields": {
+      "title": "500일의 썸머",
+      "release_date": "2009-07-17",
+      "popularity": 38.1,
+      "vote_average": 7.267,
+      "poster_path": "/jXFTwKzM1YVek4999NuTUjIHiIu.jpg"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "pk": 492188,
+    "fields": {
+      "title": "결혼 이야기",
+      "release_date": "2019-09-28",
+      "popularity": 15.485,
+      "vote_average": 7.757,
+      "poster_path": "/solGqhXDHo4tS6edTf5IkTblbc1.jpg"
+    }
+  }
+]
