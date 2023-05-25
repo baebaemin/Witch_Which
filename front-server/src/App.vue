@@ -35,7 +35,7 @@ export default {
   },
   created(){ // OTOmovieList 불러오기 -> 나중에 타이밍 바꾸자
     this.$store.dispatch('getQuestionOTO')
-    this.$store.dispatch('putOTOMovies')
+    // this.$store.dispatch('putOTOMovies')
   }
 };
 </script>

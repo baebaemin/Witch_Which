@@ -28,7 +28,8 @@
             alt="Movie Image"
             class="card-image" style="width: 100%"
           />
-          <!-- <div class="card-title">{{ card.title }}</div> -->
+          <button v-if="like_data[index].isLike" class="heart" @click="likes(card)">{{unlike}}</button>
+          <button v-if="!like_data[index].isLike" class="heart" @click="likes(card)">{{like}}</button>
         </div>
       </span>
     </div>
@@ -81,7 +82,10 @@ export default {
       isCardHovered: null, // hovered된 카드의 인덱스 부분 추적
       isSidebarOpen: false,
       clickedCard: Object,
-      star: '⭐'
+      star: '⭐',
+      like: '💗',
+      unlike: '🤍',
+      // isliked: false
     }
   },
   props: {
@@ -126,7 +130,10 @@ export default {
       }
       console.log(user_movies)
       return user_movies
-    }
+    },
+    like_data() {
+      return this.$store.state.user_like_movies
+    },
   },
   // mounted() {
   //   const colors = ["#ffd0d2", "#fffdd0", "#d0fffd", "#d0d2ff"];
@@ -170,9 +177,11 @@ export default {
       const movieId = this.clickedCard.id;
       this.$router.push({ name: 'MovieDetailView', params: { movie_id: movieId } });
     },
-    // get_user_deque() {
-    //   this.$store.dispatch('get_user_deque')
-    // }
+    likes(card) {
+      console.log(card)
+      this.$store.dispatch('likes', card)
+    },
+    
   }
 };
 </script>
@@ -271,5 +280,10 @@ hr {
   }
   .shining:hover::before {
     transform: translateX(100%);
+  }
+  .heart {
+    position:relative;
+    background-color: transparent;
+    border:none;
   }
 </style>

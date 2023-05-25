@@ -133,7 +133,7 @@ def movie_like(request, movie_id):
         is_like = True
     response = { 
         'isLike': is_like, 
-        'likeCount': movie.like_users.count() }
+        'movie_id': movie_id}
     return JsonResponse(response)
 
 @api_view(['POST'])

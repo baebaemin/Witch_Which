@@ -179,7 +179,7 @@ export default new Vuex.Store({
       state.All_users = []
       state.user_recommended = []
       state.user_deque_movies = []
-      state.user_like_movies = []
+      state._movies = []
       state.user_special_movies = []
     },
     FOLLOW(state, data) {
@@ -200,6 +200,14 @@ export default new Vuex.Store({
           }
         }
       }
+    },
+    LIKES(state, data) {
+      for(let i=0; i<state.user_like_movies.length; i++) {
+        if (state.user_like_movies[i].movie_id == data.movie_id) {
+          state.user_like_movies[i].isLike = data.isLike
+        }
+      }
+      console.log(state.user_like_movies)
     }
   },
   actions: {
@@ -335,6 +343,11 @@ export default new Vuex.Store({
           if (!this.state.user_deque_movies.includes(movieId)) {
             console.log(movieId, '---------------------1')
             this.state.user_deque_movies.push(movieId)
+            const user_like = {
+              isLike: false,
+              movie_id: movieId
+            }
+            this.state.user_like_movies.push(user_like)
           }
         })
         .catch((err) => {
@@ -662,6 +675,22 @@ export default new Vuex.Store({
       console.log(genre_movie_id)
       context.commit('GENRE_RECOMMEND', genre_movie_id)
     },
+    likes(context, movie) {
+      axios({
+        method: 'post',
+        url: `${API_URL}/movies/${movie.id}/like/`,
+        headers: {
+          Authorization: `Token ${this.state.token}`,
+        }
+      })
+      .then((res) => {
+        context.commit('LIKES', res.data)
+        console.log(res)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    }
   },
   modules: {
   },

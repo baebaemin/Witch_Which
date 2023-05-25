@@ -2,7 +2,7 @@
   <div>
     <h1>{{movie.title}}</h1>
     <div class="mt-5 mb-2 fs-4">
-      <span class="me-2">리뷰 작성자: {{ review.username }}</span> 
+      <span class="me-2" @click="goToProfile">리뷰 작성자: {{ review.username }}</span> 
       <span class="me-2">{{ review.stars }}</span>
       <span>{{ review.updated_at }}</span>
     </div>
@@ -52,6 +52,9 @@ export default {
     goToMovieDetail(){
       this.$router.push({name: 'MovieDetailView', params: {movie_id:this.movieId}})
     },
+    goToProfile(){
+      this.$router.push({name: 'ProfileView', params: {userName: this.review.username}})
+    }
   },
   computed: {
     movieId() {
