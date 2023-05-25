@@ -13,6 +13,8 @@ class Movie(models.Model):
     poster_path = models.CharField(max_length=200, null=True)
     genres = models.ManyToManyField(Genre)
     like_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='like_movies')
+    movie_deque = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='user_movies')
+    special_cards = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='favorite_movies')
 
 class QuestionAPI(models.Model):
     question = models.TextField(null=True)
