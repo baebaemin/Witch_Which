@@ -26,8 +26,8 @@
             alt="Movie Image"
             class="card-image" style="width: 100%"
           />
-          <button v-if="like_data[index].isLike" class="heart" @click="likes(card)">{{unlike}}</button>
-          <button v-if="!like_data[index].isLike" class="heart" @click="likes(card)">{{like}}</button>
+          <button v-if="!like_data[index].isLike" class="heart" @click="likes(card)">{{unlike}}</button>
+          <button v-if="like_data[index].isLike" class="heart" @click="likes(card)">{{like}}</button>
         </div>
       </span>
     </div>
@@ -179,7 +179,10 @@ export default {
       console.log(card)
       this.$store.dispatch('likes', card)
     },
-    
+    special(card) {
+      console.log(card)
+      this.$store.dispatch('special', card)
+    },
   }
 };
 </script>

@@ -141,6 +141,11 @@ export default new Vuex.Store({
     UPDATE_REVIEW(state, data) {
       state.reviews = state.reviews.map(review => {
         if(data.id === review.id){
+          let star = ''
+          for(let i=0; i<data.stars; i++) {
+            star += '⭐'
+          }
+          data.stars = star
           return data
         }
         return review
@@ -209,6 +214,9 @@ export default new Vuex.Store({
         }
       }
       console.log(state.user_like_movies)
+    },
+    SPECIAL(state, data) {
+      state, data
     }
   },
   actions: {
@@ -686,6 +694,22 @@ export default new Vuex.Store({
       })
       .then((res) => {
         context.commit('LIKES', res.data)
+        console.log(res)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    },
+    special(context, movie) {
+      axios({
+        method: 'post',
+        url: `${API_URL}/movies/${movie.id}/special/`,
+        headers: {
+          Authorization: `Token ${this.state.token}`,
+        }
+      })
+      .then((res) => {
+        context.commit('SPECIAL', res.data)
         console.log(res)
       })
       .catch((err) => {
