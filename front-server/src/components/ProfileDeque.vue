@@ -10,7 +10,7 @@
 
     <div class="main row mt-4 ps-3">
       <span
-        v-for="(card, index) in user.recommendedMovieList" 
+        v-for="(card, index) in user_deque" 
         :key="index"
         class="card mb-3 shining" 
         data-bs-toggle="offcanvas" 
@@ -59,7 +59,13 @@
           <i style="margin-right: 30px;" class="fa-solid fa-chevron-right font-size: 80px;"></i>
         </div>
         <hr>
-        {{clickedCard}}
+        <p  style="font-size: 23px; padding: 10px 25px 10px 25px; margin-bottom: 0px;">리뷰</p>
+        <div style="padding: 20px 25px 20px 25px; font-weight: 400; margin-bottom: 0px;" v-for="(review, index) in movie_reviews" :key="index">
+          <p>작성자: {{review.username}}</p>
+          <p>별점: {{review.stars}}</p>
+          <p>내용: {{review.content}}</p>
+          <hr>
+        </div>
       </div>
     </div>
   </div>
@@ -75,10 +81,11 @@ export default {
       isCardHovered: null, // hovered된 카드의 인덱스 부분 추적
       isSidebarOpen: false,
       clickedCard: Object,
+      star: '⭐'
     }
   },
   props: {
-    user: Object,
+    username: String,
   },
   computed: {
     amountsOfCards() {
@@ -88,6 +95,37 @@ export default {
     voteAverageofCard(){
       const voteAverage = this.clickedCard.vote_average
       return Number.parseFloat(voteAverage).toFixed(2);
+    },
+    // recommend() {
+    //   return this.$store.state.genre_recommend_list
+    // },
+    reviews() {
+      return this.$store.state.reviews
+    },
+    movie_reviews() {
+      let review_list = []
+      for(let i=0; i<this.reviews.length; i++) {
+        if (this.reviews[i].movie.id === this.clickedCard.id) {
+          review_list.push(this.reviews[i])
+        }
+      }
+      return review_list
+    },
+    movies() {
+      return this.$store.state.movies
+    },
+    user_deque() {
+      let user_movies = []
+      for (let j=0; j<this.$store.state.user_deque_movies.length; j++) {
+        for (let i=0; i<this.movies.length; i++) {
+          if (this.movies[i].id == this.$store.state.user_deque_movies[j]) {
+            user_movies.push(this.movies[i])
+            break
+          }
+        }
+      }
+      console.log(user_movies)
+      return user_movies
     }
   },
   // mounted() {
@@ -131,7 +169,10 @@ export default {
       console.log(this.clickedCard.id)
       const movieId = this.clickedCard.id;
       this.$router.push({ name: 'MovieDetailView', params: { movie_id: movieId } });
-    }
+    },
+    // get_user_deque() {
+    //   this.$store.dispatch('get_user_deque')
+    // }
   }
 };
 </script>

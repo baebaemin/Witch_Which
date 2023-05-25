@@ -12,9 +12,10 @@ urlpatterns = [
     # Comment URLs
     path('reviews/<int:review_id>/comments/', views.comment_list),
     path('reviews/comments/<int:comment_id>/', views.comment_detail),
+
+    path('questions/OTO/', views.question_oto_list),
     
     path('<int:movie_id>/like/', views.movie_like),
-
-    # Questions
-    path('questions/OTO/', views.question_oto_list),
+    path('<int:movie_id>/user_deque/', views.user_movie),
+    path('<int:movie_id>/special/', views.profile_cards),
 ]

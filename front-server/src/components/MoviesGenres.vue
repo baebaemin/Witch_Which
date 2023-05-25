@@ -3,13 +3,13 @@
   <hr>
   <h1>MoviesGenres</h1>
   <div style="padding:40px;">
-        <VueSlickCarousel
-                :rows="1"
-                :slidesPerRow="1"
-                v-bind="settings">
-              <GenreListItem v-for="(genre, idx) in genres" :key="idx" :genre="genre" :idx="idx"/>
-        </VueSlickCarousel>
-    </div>
+    <VueSlickCarousel
+            :rows="1"
+            :slidesPerRow="1"
+            v-bind="settings">
+          <GenreListItem v-for="(genre, idx) in genres" :key="idx" :genre="genre" :idx="idx"/>
+    </VueSlickCarousel>
+  </div>
 </div>
 </template>
 

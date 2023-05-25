@@ -136,4 +136,31 @@ def movie_like(request, movie_id):
         'likeCount': movie.like_users.count() }
     return JsonResponse(response)
 
+@api_view(['POST'])
+def user_movie(request, movie_id):
+    movie = get_object_or_404(Movie, id=movie_id)
+    user = request.user
+    movie.movie_deque.add(user)
+    is_added = True
+    response = { 
+        'is_added': is_added, 
+        'cardCount': movie.movie_deque.count(),
+        'movie_id' : movie_id,
+        'user_id' : user.id}
+    return JsonResponse(response)
 
+
+@api_view(['POST'])
+def profile_cards(request, movie_id):
+    movie = get_object_or_404(Movie, id=movie_id)
+    user = request.user
+    if movie.special_cards.filter(pk=user.pk).exists():
+        movie.special_cards.remove(user)
+        is_uploaded = False
+    else:
+        movie.special_cards.add(user)
+        is_uploaded = True
+    response = { 
+        'is_uploaded': is_uploaded, 
+        'profileCardCount': movie.special_cards.count() }
+    return JsonResponse(response)
