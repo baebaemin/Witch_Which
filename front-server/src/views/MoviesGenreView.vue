@@ -61,6 +61,7 @@ export default {
   },
   computed: {
     movies() {
+      console.log(this.$store.state.movies)
       return this.$store.state.movies;
     },
     movie_genre() {
@@ -78,10 +79,13 @@ export default {
     },
     genre_movies() {
       const c_movies = this.movies.filter((movie) => {
-        if (movie.genre_ids.includes(this.movie_genre_id)) {
-          return movie;
+        if(movie.genre_ids !== undefined){
+          if (movie.genre_ids.includes(this.movie_genre_id)) {
+            return movie;
+          }
         }
       });
+      console.log(c_movies)
       return c_movies;
     },
     paginatedMovies() {
@@ -154,4 +158,3 @@ export default {
   color: #fff;
 }
 </style>
-

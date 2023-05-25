@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 v-if="movie[0].title">{{movie[0].title}}</h1>
-    <span>장르: </span><span v-for="(genre, index) in movie[0].genre_ids" :key="`genre-${index}`">{{genre}}, </span> |
+    <span>장르: </span><span v-for="(genre, index) in genre_names" :key="`genre-${index}`">{{genre}}, </span> |
     <span>평점: {{movie[0].vote_average}}</span>
     <hr style="opacity: 1;">
   <div class="d-flex">
@@ -80,6 +80,7 @@ export default {
         alert('내용을 입력해주세요.');
         return;
       }
+      console.log(this.movie)
       const movieId = this.movie[0].id
 
       const data = {
@@ -87,7 +88,7 @@ export default {
         content: this.content,
         movie_id: movieId,
       };
-
+      console.log(data)
       this.$store.dispatch('createReviews', data)
       this.stars = null
       this.content = null
@@ -115,8 +116,32 @@ export default {
       console.log(selected_movie)
       return selected_movie
     },
+    genre_names(){
+      const genre_list = []
+      // console.log(typeof({}))
+      // console.log(typeof(this.movie[0].genre_ids[0]))
+      // console.log(typeof(this.movie[0]))
+      console.log(this.movie[0])
+      if (typeof(this.movie[0].genre_ids[0]) === typeof({})) {
+        for(let i=0; i<this.movie[0].genre_ids.length; i++) {
+          // console.log(this.movie[0].genre_ids[i].name)
+          genre_list.push(this.movie[0].genre_ids[i].name)
+        }
+      } 
+      else {
+        for (let i=0; i<this.movie[0].genre_ids.length; i++) {
+          // console.log(this.movie[0])
+          this.genres.forEach(elem => {
+            if (this.movie[0].genre_ids[i] == elem.id) {
+              genre_list.push(elem.name)
+            }
+          })
+        }
+      }
+      // console.log(genre_list)
+      return genre_list
+    },
     reviews() { // 해당 무비 아이디에서 역참조하고있는 리뷰들 가져오기
-      console.log(this.$store.state.reviews)
       let review_list = []
       this.$store.state.reviews.forEach(element => {
         if(element.movie.id == this.movie[0].id) {

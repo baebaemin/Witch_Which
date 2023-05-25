@@ -19,21 +19,24 @@ export default new Vuex.Store({
   ],
   state: {
     // 이곳의 모든 state 값은 장고에서 API 요청을 통해 데려올 것임. 지금은 placeholder용
-    genre_list: [],
-    genres: [],
-    movies: [],
+    genre_list: [], // 19개 장르 담기
+    genres: [], 
+    movies: [], // 모든 영화 데이터 들어있음
     OTOMovieIdList: [],
     questionOTOList: [],
     visibleCards: [],
     selectedCards: [],
-    reviews: [],
+    reviews: [], // 모든 리뷰들 들어있음
     token: null,
-    comments: [],
-    me: '',
-    follow: [],
-    genre_recommend_list: [],  
-    All_users: [],
-    user_recommended : []
+    comments: [], // 모든 댓글들 들어있음
+    me: '',  // 로그인 한 유저
+    follow: [], // follow 관련 데이터
+    genre_recommend_list: [], // 장르 기반 추천 데이터 들어감
+    All_users: [], // 모든 유저 데이터 들어감
+    user_recommended : [1], // 모르겠음,
+    user_deque_movies: [], // 유저 댁 들어가는 배열
+    user_like_movies: [], // 유저가 좋아요 한 무비
+    user_special_movies: [] // 유저가 선택한 스페셜 영화
   },
   getters: {
     isLogin(state) {
@@ -51,19 +54,18 @@ export default new Vuex.Store({
   },
   mutations: {
     addToRecommendedMovieList(state, movie) { 
-      // if (!state.users[0].recommendedMovieList.includes(movie)){
-      //   state.users[0].recommendedMovieList.push(movie);
-      // }
-      console.log(movie)
       const selectedCard = {
         dataImage: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
         movieTitle: movie.original_title,
         movieContents: `${movie.title} (${movie.release_date.slice(0, 4)})`,
         isRevealed: false
       }
-      state.selectedCards.push(selectedCard)
+      state.selectedCards.push(selectedCard)  // 화면에 뿌리기용
+      // DB 전송용
+
       // console.log(state.selectedCards)
     },
+
     GET_QUESTION_OTO(state, data){
       const tempMovieIdList = []
       data.forEach(q => { // OTOMovieIdList에 movieId들 넣으면서 questionOTOList에도 넣기
@@ -94,13 +96,22 @@ export default new Vuex.Store({
       console.log('visibleCards', state.visibleCards)
     },
     PUT_OTO_MOVIE(state, data){
-      state.movies.push(...data)
+      for(let i=0; i<data.length; i++) {
+        if(state.movies.includes(data[i])){
+          continue
+        }else {
+          state.movies.push(data[i])
+        }
+      }
     },
     GET_MOVIES(state, data){
-      state.movies = []
-      data.forEach(elem => {
-        state.movies.push(elem)
-      });
+      for(let i=0; i<data.length; i++) {
+        if(state.movies.includes(data[i])){
+          continue
+        }else {
+          state.movies.push(data[i])
+        }
+      }
     },
     GET_GENRES(state, data){
       state.genre_list = []
@@ -114,6 +125,7 @@ export default new Vuex.Store({
       // router.push({name:'HomeView'})  안녕 ~~
       this.dispatch('getGenres');
       this.dispatch('getMovies');
+      this.dispatch('putOTOMovies');
     },
     SAVE_REVIEWS(state, review) {
       console.log(state.reviews)
@@ -162,6 +174,13 @@ export default new Vuex.Store({
     LOGOUT(state) {
       state.me = null
       state.token = null
+      state.follow = []
+      state.genre_recommend_list = []
+      state.All_users = []
+      state.user_recommended = []
+      state.user_deque_movies = []
+      state.user_like_movies = []
+      state.user_special_movies = []
     },
     FOLLOW(state, data) {
       state.follow = []
@@ -174,6 +193,13 @@ export default new Vuex.Store({
     USER(state, data) {
       state.All_users = []
       state.All_users.push(...data)
+      for (let i=0; i<data.length; i++) {
+        if (data[i].username == state.me) {
+          for (let j=0; j<data[i].user_movies.length; j++) {
+            state.user_deque_movies.push(data[i].user_movies[j].id)
+          }
+        }
+      }
     }
   },
   actions: {
@@ -291,30 +317,29 @@ export default new Vuex.Store({
             language: 'ko-KR'
           }
         })
+        // islogined로 if문 갈라서 false면 오지말고 true면 실행
         .then((res) => {
           const movie = res.data // tmdb 형태
           console.log(res)
           commit('addToRecommendedMovieList', movie);
-          axios({
+          axios({ 
             url: `${API_URL}/movies/${res.data.id}/user_deque/`, // 영화 mtm에 저장
             method: 'post',
             data: {movie},
             headers: {
               Authorization: `Token ${state.token}`
             }
-          })
-          .then((res) => {
-            console.log(res)
-            const movieId = res.data.movie_id
-            for (let i=0; i<this.state.movies.length; i++) {
-              if (this.state.movies[i].id === movieId) {
-                console.log('d')
-              }
-            }
-          })
-          .catch((err) => {
-            console.log(err)
-          })
+        })
+        .then((res) => {
+          console.log(res)
+          if (!this.state.user_deque_movies.includes(movieId)) {
+            console.log(movieId, '---------------------1')
+            this.state.user_deque_movies.push(movieId)
+          }
+        })
+        .catch((err) => {
+          console.log(err)
+        })
         })
         .catch((err) => {
           console.log(err)
@@ -352,6 +377,7 @@ export default new Vuex.Store({
         console.log(err);
       });
     },          
+
     getMovies(context) {
       const requests = [];
       for (let i = 1; i < 20; i++) {
@@ -373,7 +399,6 @@ export default new Vuex.Store({
           const movieDataList = [];
           responses.forEach((res) => {
             const data = res.data.results;
-            console.log(data)
             data.forEach(movie => {
               const movie_data = {
                 id: movie.id,
@@ -411,6 +436,7 @@ export default new Vuex.Store({
           console.log(err);
         });
     },
+
     signUp(context, payload) {
       const username = payload.username
       const password1 = payload.password1
@@ -451,6 +477,7 @@ export default new Vuex.Store({
         console.log(err)
       })
     },
+
     logIn(context, payload) {
       const username = payload.username
       const password = payload.password
@@ -482,6 +509,7 @@ export default new Vuex.Store({
       })
       .catch(err => console.log(err))
     },
+
     createReviews(context, data) {
       console.log(data)
       axios({
@@ -602,7 +630,7 @@ export default new Vuex.Store({
           }
         })
         .then((res) => {
-          console.log('follow', res.data)
+          console.log('follow', res)
           axios({
             method:'get',
             url: `${API_URL}/accounts/`,
@@ -612,7 +640,7 @@ export default new Vuex.Store({
           })
           .then((res) => {
             context.commit('FOLLOW', res.data)
-            // console.log(res.data)
+            console.log(res.data)
           })
           .catch((err) => {
             console.log(err)
@@ -621,13 +649,20 @@ export default new Vuex.Store({
         .catch((err) => {
           console.log(err)
         })
-    }
+    },
+    genre_recommend(context, genre_id) {
+      const genre_movie_list = []
+      for (let i=0; i<this.state.movies.length; i++) {
+        if (this.state.movies[i].genre_ids.includes(genre_id)) {
+          genre_movie_list.push(this.state.movies[i])
+        }
+      }
+      console.log(genre_movie_list)
+      const genre_movie_id = genre_movie_list[Math.floor(Math.random()*genre_movie_list.length)]
+      console.log(genre_movie_id)
+      context.commit('GENRE_RECOMMEND', genre_movie_id)
+    },
   },
   modules: {
-  },
-  watch: {
-    'state.OTOMovieIdList'(newVal, oldVal) {
-      console.log(`count changed from ${oldVal} to ${newVal}`);
-    },
   },
 })

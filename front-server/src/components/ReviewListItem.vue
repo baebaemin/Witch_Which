@@ -5,7 +5,7 @@
 
         <div class="mb-2">
           <span class="me-2" @click="gotoProfile">작성자: {{ review.username }}</span>
-          <span class="me-2">{{ total_stars }}</span>
+          <span class="me-2">{{ review.stars }}</span>
           <span>{{review.updated_at}}</span>
         </div>
 
@@ -111,13 +111,13 @@ export default {
     content() {
       return this.review.content
     },
-    total_stars() {
-      let total = ''
-      for(let i=0; i<this.review.stars; i++) {
-        total += this.star
-      }
-      return total
-    },
+    // total_stars() {
+    //   let total = ''
+    //   for(let i=0; i<this.review.stars; i++) {
+    //     total += this.star
+    //   }
+    //   return total
+    // },
   }
 }
 </script>

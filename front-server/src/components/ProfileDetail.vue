@@ -31,7 +31,6 @@ export default {
         },
         follow_data() {
             let user = Object
-            console.log(this.$store.state.follow)
             for (let i=0; i<this.$store.state.follow.length; i++) {
                 if (this.$store.state.follow[i].username === this.username) {
                     console.log(this.$store.state.follow[i])
