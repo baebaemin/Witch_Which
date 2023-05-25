@@ -2,7 +2,7 @@
   <div>
     <div class="comment-box">
     <div class="fs-5">
-      <span class="me-3">댓글 작성자: {{comment.username}}</span>
+      <span class="me-3" @click="goToProfile">댓글 작성자: {{comment.username}}</span>
       <span>{{comment.updated_at}}</span><br>
       <p class="mt-2">{{comment.content}}</p>
     </div>
@@ -63,6 +63,9 @@ export default {
     deleteComments() {
       this.$store.dispatch('deleteComment', this.comment.id)
     },
+    goToProfile(){
+      this.$router.push({name: 'ProfileView', params: {userName: this.comment.username}})
+    }
   },
   computed: {
     content() {
