@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h3>ProfileDeque</h3>
-    <hr>
     <div class="row" style="justify-content: center;">
       <p class="favoriteCard">+</p>
       <p class="favoriteCard">+</p>
@@ -41,7 +39,7 @@
           <i class="fa-solid fa-chevron-left font-size: 100px;"></i>
         </div>
         <img
-          :src="`https://image.tmdb.org/t/p/w500${clickedCard.backdrop_path}`"
+          :src="`https://image.tmdb.org/t/p/w500${clickedCard.poster_path}`"
           style="width: 100%;"
         />
         <div style="padding: 25px; font-weight: 400; margin-bottom: 0px;">
