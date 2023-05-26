@@ -185,7 +185,7 @@ export default new Vuex.Store({
       state.All_users = []
       state.user_recommended = []
       state.user_deque_movies = []
-      state._movies = []
+      state.user_like_movies = []
       state.user_special_movies = []
     },
     FOLLOW(state, data) {
@@ -217,6 +217,12 @@ export default new Vuex.Store({
     },
     SPECIAL(state, data) {
       state, data
+    },
+    pushToUserDequeMovies(state, data) {
+      state.user_deque_movies.push(data)
+    },
+    pushToUserLikeMovies(state, data) {
+      state.user_like_movies.push(data)
     }
   },
   actions: {
@@ -313,59 +319,54 @@ export default new Vuex.Store({
     //     })
     //   })
     },
-    addMovieToRecommendedList({commit, state}, {cardIdx, side}) { // {commit, state} 
-
-      // let movieIdList
-      let movieId
-      if (side === 'left'){
+    addMovieToRecommendedList({ commit, state }, { cardIdx, side }) {
+      let movieId;
+      if (side === 'left') {
         movieId = state.questionOTOList[cardIdx].leftMovieId;
       } else if (side === 'right') {
-        movieId = state.questionOTOList[cardIdx].rightMovieId
+        movieId = state.questionOTOList[cardIdx].rightMovieId;
       }
-      
-      // 추천해줄 MovieId가 없는 경우 추가하지 않음 
-      // movieId 하나 받아서 있을 때만 axios 요청
+    
       if (movieId) {
         axios({
-          url: `${MOVIE_URL}/${movieId}`, // 추천한 영화 tmdb에서 가져오기
+          url: `${MOVIE_URL}/${movieId}`,
           method: 'get',
           params: {
             api_key: API_KEY,
             language: 'ko-KR'
           }
         })
-        // islogined로 if문 갈라서 false면 오지말고 true면 실행
-        .then((res) => {
-          const movie = res.data // tmdb 형태
-          console.log(res)
-          commit('addToRecommendedMovieList', movie);
-          axios({ 
-            url: `${API_URL}/movies/${res.data.id}/user_deque/`, // 영화 mtm에 저장
-            method: 'post',
-            data: {movie},
-            headers: {
-              Authorization: `Token ${state.token}`
-            }
-        })
-        .then((res) => {
-          console.log(res)
-          if (!this.state.user_deque_movies.includes(movieId)) {
-            console.log(movieId, '---------------------1')
-            this.state.user_deque_movies.push(movieId)
-            const user_like = {
-              isLike: false,
-              movie_id: movieId
-            }
-            this.state.user_like_movies.push(user_like)
-          }
-        })
-        .catch((err) => {
-          console.log(err)
-        })
-        })
-        .catch((err) => {
-          console.log(err)
-        })
+          .then((res) => {
+            const movie = res.data;
+            console.log(res);
+            commit('addToRecommendedMovieList', movie);
+            axios({
+              url: `${API_URL}/movies/${res.data.id}/user_deque/`,
+              method: 'post',
+              data: { movie },
+              headers: {
+                Authorization: `Token ${state.token}`
+              }
+            })
+              .then((res) => {
+                console.log(res);
+                if (!state.user_deque_movies.includes(movieId)) {
+                  console.log(movieId, '---------------------1');
+                  commit('pushToUserDequeMovies', movieId);
+                  const user_like = {
+                    isLike: false,
+                    movie_id: movieId
+                  };
+                  commit('pushToUserLikeMovies', user_like);
+                }
+              })
+              .catch((err) => {
+                console.log(err);
+              });
+          })
+          .catch((err) => {
+            console.log(err);
+          });
       }
     },
     getGenres(context) {
@@ -485,11 +486,7 @@ export default new Vuex.Store({
         .then((res) => {
           context.commit('FOLLOW', res.data)
           context.commit('USER', res.data)
-          for (let i=0; i<this.state.All_users.length; i++) {
-            if (this.state.All_users[i].username === this.me) {
-              this.state.user_recommended = this.state.All_users[i].user_movies
-            }
-          }
+          console.log(res.data)
         })
         .catch((err) => {
           console.log(err)
