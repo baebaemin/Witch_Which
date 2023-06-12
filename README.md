@@ -27,10 +27,11 @@
 
 ### 📝Description
 
-- 상세화면 (추가 예정)
 - 영화 정보 및 추천 서비스 제공 프로젝트
-- 기획의도: (추가 예정)
-
+- ppt : https://www.slideshare.net/ssuser690927/witch-whichpdf
+- vid : https://drive.google.com/file/d/1DM-1aBpk1cdAPlVJoH1_DMAz2iVgssPE/view?usp=sharing 
+ 
+ 
 ### 🏆목표
 
 - 영화 데이터 및 사용자 선택 기반 추천 서비스 구성
@@ -53,24 +54,18 @@
 
 ### 🖥 **Tech Stack**
 * ### Backend
-    <details>
-        <summary></summary>
-
       - Django
       - Django Rest Framework
       - Python
-    </details> 
 
 * ### Frontend
-     <details>
-          <summary></summary>
-
       - HTML
       - Javascript
       - CSS
       - Vue.js
       - SCSS
-     </details> 
+      - interact.js
+
 ### 💾 **데이터베이스 모델링(ERD)**
 
 [https://app.diagrams.net/#G1Sdyho66VYZfVACLStTywmc5fvunYeoyd](https://app.diagrams.net/#G1Sdyho66VYZfVACLStTywmc5fvunYeoyd)
@@ -92,13 +87,11 @@
 
 [https://www.figma.com/file/ObHM4zLi9Z2946zmgbXvbF/오늘의-영화-_-컴포넌트-구조?type=whiteboard&node-id=0-1&t=0cM3X4y9Zb4NZcY2-0](https://www.figma.com/file/ObHM4zLi9Z2946zmgbXvbF/%EC%98%A4%EB%8A%98%EC%9D%98-%EC%98%81%ED%99%94-_-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EA%B5%AC%EC%A1%B0?type=whiteboard&node-id=0-1&t=0cM3X4y9Zb4NZcY2-0)
 
-### 🎢 **서비스 플로우 차트**
-
 ### **🎨 UI 디자인**
 
 [https://www.figma.com/file/Ux3OhhbeTKZZPbVp4jxM9V/Marrot?type=design&node-id=0-1&t=MZ8lY7T2m9S2ybNv-0](https://www.figma.com/file/Ux3OhhbeTKZZPbVp4jxM9V/Marrot?type=design&node-id=0-1&t=MZ8lY7T2m9S2ybNv-0)
 
-### 💜 느낀점
+### 💜 느낀점 (날짜별 진행상황은 daily_README 폴더 참조)
 #### 배민경
 [설계의 중요성]
 데이터베이스 모델링과 컴포넌트 구조, 서비스 기획 등 본격적인 개발 작업에 앞선 설계 작업을 프로젝트 시작일로부터 2-3일은 꼬박 걸렸다. 그러나 결코 긴 시간이 아니었고, 충분한 시간을 들여 할 가치가 있었던 것 같다. 특히 시각적으로 컴포넌트 구조를 제작하고 나니 (물론 실제 개발하면서 처음 구조를 짰던 ERD와 컴포넌트 구조 둘 다 지속적으로 업데이트해야했지만) 수많은 XXView.vue 파일과 라우팅 URL과 컴포넌트들을 엮으며 작업할 때 참고할 수 있어서 정말 큰 도움이 되었다.
